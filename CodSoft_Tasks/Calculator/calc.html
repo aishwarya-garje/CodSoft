@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+  <div class="calculator">
+    <div id="display">0</div>
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="deleteLast()">⌫</button>
+      <button onclick="inputOperator('/')">÷</button>
+      <button onclick="inputOperator('*')">×</button>
+      <button onclick="inputNumber(7)">7</button>
+      <button onclick="inputNumber(8)">8</button>
+      <button onclick="inputNumber(9)">9</button>
+      <button onclick="inputOperator('-')">-</button>
+      <button onclick="inputNumber(4)">4</button>
+      <button onclick="inputNumber(5)">5</button>
+      <button onclick="inputNumber(6)">6</button>
+      <button onclick="inputOperator('+')">+</button>
+      <button onclick="inputNumber(1)">1</button>
+      <button onclick="inputNumber(2)">2</button>
+      <button onclick="inputNumber(3)">3</button>
+      <button onclick="inputOperator('%')">%</button>
+      <button onclick="calculate()" class="equals">=</button>
+      <button onclick="inputNumber(0)">0</button>
+      <button onclick="inputNumber('.')">.</button>
+    </div>
+
+    <div id="history-section">
+        <h3>History</h3>
+        <div id="history"></div>
+        <button onclick="clearHistory()" class="clear-history">Clear History</button>
+      </div>
+
+  </div>
+  <script src="calc.js"></script>
+</body>
+</html>

@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar Styling */
+.navbar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  color: #fff;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-item {
+  height: 60px;
+}
+
+.nav-link {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #3E2723; 
+}
+
+.nav-link.btn {
+  background-color: #FF5722; 
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link.btn:hover {
+  background-color: #E64A19;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+      padding: 0 10px;
+  }
+  
+  .menu-icon {
+      display: block;
+  }
+  
+  .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: calc(100vh - 60px);
+      position: absolute;
+      top: 60px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      background-color: #6B4F4F;
+  }
+  
+  .nav-menu.active {
+      left: 0;
+  }
+  
+  .nav-item {
+      width: 100%;
+  }
+  
+  .nav-link {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+  }
+  
+  .nav-link.btn {
+      margin: 1.5rem auto;
+      display: block;
+  }
+}
+/* Menu Section Styling */
+.menu-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.menu-section h2 {
+  font-size: 2.5rem;
+  color: #6B4F4F;
+  margin-bottom: 30px;
+}
+
+.menu-container h3 {
+  font-size: 1.8rem;
+  color: #6B4F4F;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-item {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-details {
+  padding: 15px;
+}
+
+.menu-details h4 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.menu-details .price {
+  font-size: 1.2rem;
+  color: #FF5722;
+  margin-bottom: 15px;
+}
+
+.btn-add-to-cart, .btn-order-now {
+  background-color: #6B4F4F;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 5px;
+}
+
+.btn-add-to-cart:hover, .btn-order-now:hover {
+  background-color: #3E2723;
+}
+
+/* Cart Section Styling */
+.cart-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.cart-section h2 {
+  font-size: 2.5rem;
+  color: #6B4F4F;
+  margin-bottom: 20px;
+}
+
+.cart-container {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.cart-item h4 {
+  font-size: 1.2rem;
+  color: #333;
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.cart-item .price {
+  font-size: 1.1rem;
+  color: #FF5722;
+  flex: 1;
+}
+
+.cart-item .quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.quantity-controls button {
+  background-color: #6B4F4F;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quantity-controls button:hover {
+  background-color: #3E2723;
+}
+
+.cart-item .remove-item {
+  background-color: #d9534f; /* Red color */
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart-item .remove-item:hover {
+  background-color: #c9302c;
+}
+
+.total-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #d9534f; /* Red color */
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  color: #fff;
+}
+
+.btn-add-more {
+  background-color: #6B4F4F;
+}
+
+.btn-add-more:hover {
+  background-color: #3E2723;
+}
+
+.btn-checkout {
+  background-color: #FF5722;
+}
+
+.btn-checkout:hover {
+  background-color: #E64A19;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 600px) {
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item img {
+    margin-bottom: 10px;
+  }
+
+  .cart-item h4,
+  .cart-item .price,
+  .cart-item .quantity-controls,
+  .cart-item .remove-item {
+    flex: none;
+    margin-top: 10px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

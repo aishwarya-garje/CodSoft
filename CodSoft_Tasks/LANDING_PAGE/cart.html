@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ALL-IN-ONE-CAFE - Cart</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="landing.html" class="navbar-logo">ALL-IN-ONE-CAFE</a>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="landing.html#menu" class="nav-link">Menu</a></li>
+          <li class="nav-item"><a href="landing.html#about" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="landing.html#feedback" class="nav-link">Feedback</a></li>
+          <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Cart Section -->
+  <section id="cart" class="cart-section">
+    <h2>Your Cart</h2>
+    <div class="cart-container" id="cartItems">
+  
+    </div>
+    <p class="total-price">Total: ₹<span id="totalPrice">0</span></p>
+    <div class="buttons">
+      <button class="btn btn-add-more" id="addMoreButton">+ Add More Items</button>
+      <button class="btn btn-checkout" id="checkoutButton">Proceed to Checkout</button>
+    </div>
+  </section>
+
+
+  <script src="js/cart.js"></script>
+</body>
+</html>

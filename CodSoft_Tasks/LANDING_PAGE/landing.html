@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All-in-one-Cafe</title>
+  <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#" class="navbar-logo">ALL-IN-ONE-CAFE</a>
+        
+        <!-- Hamburger Icon -->
+        <div class="menu-icon" id="menu-icon" aria-label="Toggle navigation" role="button" tabindex="0">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="#feedback" class="nav-link">Feedback</a></li>
+          <li class="nav-item"><a href="cart.html" class="nav-link btn-order-now">Order Now</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="image-container">
+    <span class="arrow" id="prev" aria-label="Previous Image">&lt;</span>
+    <img src="images/image1.avif" alt="Delicious Pizza and Coffee" id="mainImage" loading="lazy">
+    <span class="arrow" id="next" aria-label="Next Image">&gt;</span>
+  </div>
+  
+  <!-- Coffee and Pizza Combo Section -->
+  <section id="combo" class="combo-section">
+    <h2>Burger and Fries Combo</h2>
+    <div class="combo-container">
+      <img src="file:///C:/Users/Dell/OneDrive/Documents/INTERNSHIP/OIBSIP/LAND/images/combo7.jpg" alt="Burger and Fries Combo" class="combo-image">
+      <div class="combo-details">
+        <h3>Classic Duo</h3>
+        <p>Savor our juicy burger paired with crispy golden fries, the ultimate combo for a satisfying meal!</p>
+        <p class="price">Only <strong>₹249</strong></p>
+        <button class="btn-add-to-cart" data-item="Burger and Fries Combo" data-price="249">Order Now</button>
+          
+      </div>
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2 class="about-heading">About Us</h2> 
+    <p class="welcome-text">WELCOME IN ALL-IN-ONE-CAFE</p> 
+    <div class="about-container">
+      <p>At ALL-IN-ONE-CAFE, we believe in creating a warm and inviting atmosphere where you can enjoy the perfect blend of delicious food and exceptional coffee. Founded in 2020, our mission is to provide a cozy retreat for coffee enthusiasts and food lovers alike.</p>
+      <p>Our team is dedicated to sourcing the finest ingredients, ensuring that every bite and sip you take is of the highest quality. Whether you're grabbing a quick bite, meeting friends, or working remotely, ALL-IN-ONE-CAFE is your go-to spot for relaxation and satisfaction.</p>
+    </div>
+  </section>
+  
+  <!-- Menu Section -->
+  <section id="menu" class="menu-section">
+    <h2>Our Menu</h2>
+    <div class="menu-container">
+      
+      <!-- Pizzas -->
+      <h3>Pizzas</h3>
+      <div class="menu-items">
+        <!-- Pizza 1 -->
+        <div class="menu-item">
+          <img src="images/image2.webp" alt="Margherita Pizza" class="menu-image" loading="lazy">
+          <div class="menu-details">
+            <h4>Margherita Pizza</h4>
+            <p class="price">₹299</p>
+            <button class="btn-add-to-cart" data-item="Margherita Pizza" data-price="299">Add to Cart</button>
+          </div>
+        </div>
+        <!-- Pizza 2 -->
+        <div class="menu-item">
+          <img src="images/image4.jpg" alt="Pepperoni Pizza" class="menu-image" loading="lazy">
+          <div class="menu-details">
+            <h4>Pepperoni Pizza</h4>
+            <p class="price">₹349</p>
+            <button class="btn-add-to-cart" data-item="Pepperoni Pizza" data-price="349">Add to Cart</button>
+          </div>
+        </div>
+        <!-- Pizza 3 -->
+        <div class="menu-item">
+          <img src="images/image3.webp" alt="Veggie Delight Pizza" class="menu-image" loading="lazy">
+          <div class="menu-details">
+            <h4>Veggie Delight Pizza</h4>
+            <p class="price">₹329</p>
+            <button class="btn-add-to-cart" data-item="Veggie Delight Pizza" data-price="329">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Rolls -->
+      <h3>Rolls</h3>
+      <div class="menu-items">
+        <!-- Roll 1 -->
+        <div class="menu-item">
+          <img src="images/roll5.jpg" alt="Chicken Roll" class="menu-image" loading="lazy">
+          <div class="menu-details">
+            <h4>Chicken Roll</h4>
+            <p class="price">₹149</p>
+            <button class="btn-add-to-cart" data-item="Chicken Roll" data-price="149">Add to Cart</button>
+          </div>
+        </div>
+        <!-- Roll 2 -->
+        <div class="menu-item">
+          <img src="images/roll2.jpeg" alt="Paneer Roll" class="menu-image" loading="lazy">
+          <div class="menu-details">
+            <h4>Paneer Roll</h4>
+            <p class="price">₹129</p>
+            <button class="btn-add-to-cart" data-item="Paneer Roll" data-price="129">Add to Cart</button>
+          </div>
+        </div>
+        <!-- Roll 3 -->
+        <div class="menu-item">
+          <img src="images/roll3.jpg" alt="Veggie Roll" class="menu-image" loading="lazy">
+          <div class="menu-details">
+            <h4>Veggie Roll</h4>
+            <p class="price">₹119</p>
+            <button class="btn-add-to-cart" data-item="Veggie Roll" data-price="119">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Sandwiches -->
+      <h3>Sandwiches</h3>
+      <div class="menu-items">
+        <!-- Sandwich 1 -->
+        <div class="menu-item">
+          <img src="images/sandwich1.jpg" alt="Club Sandwich" class="menu-image" loading="lazy">
+          <div class="menu-details">
+            <h4>Club Sandwich</h4>
+            <p class="price">₹199</p>
+            <button class="btn-add-to-cart" data-item="Club Sandwich" data-price="199">Add to Cart</button>
+          </div>
+        </div>
+        <!-- Sandwich 2 -->
+        <div class="menu-item">
+          <img src="images/sandwich2.jpg" alt="Grilled Cheese Sandwich" class="menu-image" loading="lazy">
+          <div class="menu-details">
+            <h4>Grilled Cheese Sandwich</h4>
+            <p class="price">₹179</p>
+            <button class="btn-add-to-cart" data-item="Grilled Cheese Sandwich" data-price="179">Add to Cart</button>
+          </div>
+        </div>
+        <!-- Sandwich 3 -->
+        <div class="menu-item">
+          <img src="images/sandwich3.jpg" alt="Veggie Sandwich" class="menu-image" loading="lazy">
+          <div class="menu-details">
+            <h4>Veggie Sandwich</h4>
+            <p class="price">₹159</p>
+            <button class="btn-add-to-cart" data-item="Veggie Sandwich" data-price="159">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Momos -->
+      <h3>Momos</h3>
+      <div class="menu-items">
+        <!-- Momo 1 -->
+        <div class="menu-item">
+          <img src="images/momos4.avif" alt="Chicken Momos" class="menu-image" loading="lazy">
+          <div class="menu-details">
+            <h4>Chicken Momos</h4>
+            <p class="price">₹99</p>
+            <button class="btn-add-to-cart" data-item="Chicken Momos" data-price="99">Add to Cart</button>
+          </div>
+        </div>
+        <!-- Momo 2 -->
+        <div class="menu-item">
+          <img src="images/momos1.webp" alt="Paneer Momos" class="menu-image" loading="lazy">
+          <div class="menu-details">
+            <h4>Paneer Momos</h4>
+            <p class="price">₹89</p>
+            <button class="btn-add-to-cart" data-item="Paneer Momos" data-price="89">Add to Cart</button>
+          </div>
+        </div>
+        <!-- Momo 3 -->
+        <div class="menu-item">
+          <img src="images/momos3.jpg" alt="Fried Momos" class="menu-image" loading="lazy">
+          <div class="menu-details">
+            <h4>Fried Momos</h4>
+            <p class="price">₹79</p>
+            <button class="btn-add-to-cart" data-item="Fried Momos" data-price="79">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Burgers -->
+      <h3>Burgers</h3>
+      <div class="menu-items">
+        <!-- Burger 1 -->
+        <div class="menu-item">
+          <img src="images/burger1.jpeg" alt="Classic Beef Burger" class="menu-image" loading="lazy">
+          <div class="menu-details">
+            <h4>Classic Beef Burger</h4>
+            <p class="price">₹199</p>
+            <button class="btn-add-to-cart" data-item="Classic Beef Burger" data-price="199">Add to Cart</button>
+          </div>
+        </div>
+        <!-- Burger 2 -->
+        <div class="menu-item">
+          <img src="images/burger2.webp" alt="Chicken Burger" class="menu-image" loading="lazy">
+          <div class="menu-details">
+            <h4>Chicken Burger</h4>
+            <p class="price">₹179</p>
+            <button class="btn-add-to-cart" data-item="Chicken Burger" data-price="179">Add to Cart</button>
+          </div>
+        </div>
+        <!-- Burger 3 -->
+        <div class="menu-item">
+          <img src="images/burger3.jpg" alt="Veggie Burger" class="menu-image" loading="lazy">
+          <div class="menu-details">
+            <h4>Veggie Burger</h4>
+            <p class="price">₹159</p>
+            <button class="btn-add-to-cart" data-item="Veggie Burger" data-price="159">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Coffees -->
+      <h3>Coffees</h3>
+      <div class="menu-items">
+        <!-- Coffee 1 -->
+        <div class="menu-item">
+          <img src="images/coffee1.avif" alt="Hot Coffee" class="menu-image" loading="lazy">
+          <div class="menu-details">
+            <h4>Hot Coffee</h4>
+            <p class="price">₹99</p>
+            <button class="btn-add-to-cart" data-item="Hot Coffee" data-price="99">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/hotcoffee.jpg" alt="Black Coffee" class="menu-image" loading="lazy">
+          <div class="menu-details">
+            <h4>Black Coffee</h4>
+            <p class="price">₹99</p>
+            <button class="btn-add-to-cart" data-item="Black Coffee" data-price="99">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Coffee 2 -->
+        <div class="menu-item">
+          <img src="images/coffee2.jpg" alt="Cold Coffee" class="menu-image" loading="lazy">
+          <div class="menu-details">
+            <h4>Cold Coffee</h4>
+            <p class="price">₹119</p>
+            <button class="btn-add-to-cart" data-item="Cold Coffee" data-price="119">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Fries -->
+      <h3>Fries</h3>
+      <div class="menu-items">
+        <!-- Fries 1 -->
+        <div class="menu-item">
+          <img src="images/fries.jpg" alt="French Fries" class="menu-image" loading="lazy">
+          <div class="menu-details">
+            <h4>French Fries</h4>
+            <p class="price">₹59</p>
+            <button class="btn-add-to-cart" data-item="French Fries" data-price="59">Add to Cart</button>
+          </div>
+        </div>
+        <!-- Fries 2 -->
+        <div class="menu-item">
+          <img src="images/fries2.jpg" alt="Cheese Fries" class="menu-image" loading="lazy">
+          <div class="menu-details">
+            <h4>Cheese Fries</h4>
+            <p class="price">₹79</p>
+            <button class="btn-add-to-cart" data-item="Cheese Fries" data-price="79">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+
+  <!-- Feedback Section -->
+  <section id="feedback" class="feedback-section">
+    <h2>Customer Feedback</h2>
+    
+    <div class="feedback-container">
+        <div class="feedback-item">
+            <h4>Smita Chopra</h4>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Amazing coffee! The atmosphere is perfect for working."</p>
+        </div>
+        
+        <div class="feedback-item">
+            <h4>Jony Doe</h4>
+            <div class="stars">⭐⭐⭐⭐</div>
+            <p>"The pizza was delicious! Will definitely come back."</p>
+        </div>
+
+        <div class="feedback-item">
+            <h4>Emily Johnson</h4>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Best cafe in town! I love their sandwiches."</p>
+        </div>
+
+        <div class="feedback-item">
+            <h4>Michael Brown</h4>
+            <div class="stars">⭐⭐⭐⭐</div>
+            <p>"Great ambiance, perfect for a date night!"</p>
+        </div>
+
+        <div class="feedback-item">
+            <h4>Sarah Davis</h4>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Highly recommend the coffee and dessert combo."</p>
+        </div>
+
+        <div class="feedback-item hidden">
+            <h4>David Wilson</h4>
+            <div class="stars">⭐⭐⭐⭐</div>
+            <p>"Loved the variety of options on the menu."</p>
+        </div>
+
+        <div class="feedback-item hidden">
+            <h4>Lisa Green</h4>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"The staff is so friendly and welcoming!"</p>
+        </div>
+
+        <div class="feedback-item hidden">
+            <h4>James White</h4>
+            <div class="stars">⭐⭐⭐⭐</div>
+            <p>"Perfect place for brunch with friends."</p>
+        </div>
+
+        <div class="feedback-item hidden">
+            <h4>Mary Lewis</h4>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Their momos are to die for!"</p>
+        </div>
+
+        <div class="feedback-item hidden">
+            <h4>Chris Harris</h4>
+            <div class="stars">⭐⭐⭐⭐</div>
+            <p>"Nice place to chill after a long day."</p>
+        </div>
+    </div>
+
+    <button id="moreFeedback">More Feedback</button>
+</section>
+
+  <script src="js/script.js"></script> 
+</body>
+</html>
